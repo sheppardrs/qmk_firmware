@@ -67,6 +67,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   */
 
   [LAYER_SYM] = LAYOUT_split_3x5_3(
+  // ╭─────────────────────────────────────────────────────────────╮   ╭────────────────────────────────────────────────────╮
+        KC_ESC, LCTL(KC_F7), LCTL(KC_F8), LCTL(KC_F9), LCTL(KC_F10),           XXXXXXX,    XXXXXXX,  KC_F5,    KC_F6,    XXXXXXX,
+  // ├─────────────────────────────────────────────────────────────┤   ├────────────────────────────────────────────────────┤
+       KC_LSFT, LCTL(KC_F4), LCTL(KC_F5), LCTL(KC_F6), LCTL(KC_F10),            XXXXXXX,   KC_LEFT,  KC_UP,    KC_RIGHT, XXXXXXX,
+  // ├─────────────────────────────────────────────────────────────┤   ├────────────────────────────────────────────────────┤
+       _______, LCTL(KC_F1), LCTL(KC_F2), LCTL(KC_F3), LCTL(KC_F12),           XXXXXXX,   XXXXXXX,  KC_DOWN,  XXXXXXX,  XXXXXXX,
+  // ╰─────────────────────────────────────────────────────────────┤   ├────────────────────────────────────────────────────╯
+                         _______, _______, _______,                         _______, _______, _______
+  //                   ╰───────────────────────────────────────────╯   ╰───────────────────────────────────────────╯
+  ),
+  /*
   // ╭─────────────────────────────────────────────╮ ╭─────────────────────────────────────────────╮
         KC_ESC, KC_LBRC, KC_LCBR, KC_LPRN, KC_TILD,    KC_CIRC, KC_RPRN, KC_RCBR, KC_RBRC,  KC_GRV,
   // ├─────────────────────────────────────────────┤ ├─────────────────────────────────────────────┤
@@ -89,6 +100,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                          XXXXXXX, _______, KC_LSFT,     KC_SPC, _______, XXXXXXX
   //                   ╰───────────────────────────╯ ╰──────────────────────────╯
   ),
+  */
 };
 // clang-format on
 
@@ -100,18 +112,19 @@ Put on main keyboard:
 //Apostrophe '
 
 first layer: 
-outlook foldering
-numbers
+//outlook foldering
+//numbers
 add: 
-decimal place 
-colon (remove colon from main?)
+//decimal place 
+//colon (remove colon from main?)
 
 Arrow keys
 
 make this a layer - or right side of either of the outlook shortcut layers 
-Alt shift arrow keys
-Ctrl shift arrow keys
-Windows shift arrow keys
+//add SSMS shortcuts? F5 and F6 added
+//Alt shift arrow keys -> have to press alt and shift
+//Ctrl shift arrow keys -> have to press ctrl and shift
+//Windows shift arrow keys -> somewhat possible -> have to press shift and windows with the same thumb
 
 Right hand thumb bar isnt used much outside of layer button
 */
