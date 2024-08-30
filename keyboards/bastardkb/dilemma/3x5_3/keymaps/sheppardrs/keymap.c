@@ -37,8 +37,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ├─────────────────────────────────────────────┤ ├─────────────────────────────────────────────┤
           KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,       KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH,
   // ╰─────────────────────────────────────────────┤ ├─────────────────────────────────────────────╯
-                         KC_LCTL,     NAV, KC_LGUI,     KC_SPC,     SYM,    KC_A
-  //                   ╰───────────────────────────╯ ╰──────────────────────────╯
+          NAV,   LALT_T(KC_SPC), LCTL_T(KC_BSPC),         RSFT_T(KC_ENT),  LGUI_T(KC_TAB),   SYM
+  //    ╰──────────────────────────────────────────╯ ╰───────────────────────────────────────────╯
   ),
 
   [LAYER_NAV] = LAYOUT_split_3x5_3(
@@ -49,7 +49,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ├─────────────────────────────────────────────┤ ├─────────────────────────────────────────────┤
        QK_BOOT, EE_CLR, KC_MPRV, KC_MNXT, KC_MPLY,    XXXXXXX, KC_PGDN, KC_PGUP, XXXXXXX,  KC_ENT,
   // ╰─────────────────────────────────────────────┤ ├─────────────────────────────────────────────╯
-                         XXXXXXX, _______, KC_LSFT,     KC_SPC, _______, KC_ESC
+                         _______, _______, KC_LSFT,     KC_SPC, _______, KC_ESC
   //                   ╰───────────────────────────╯ ╰──────────────────────────╯
   ),
 
@@ -78,3 +78,27 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 };
 // clang-format on
+
+
+/* 
+
+Put on main keyboard:
+//Tab
+//Apostrophe '
+
+first layer: 
+outlook foldering
+numbers
+add: 
+decimal place 
+colon (remove colon from main?)
+
+Arrow keys
+
+make this a layer - or right side of either of the outlook shortcut layers 
+Alt shift arrow keys
+Ctrl shift arrow keys
+Windows shift arrow keys
+
+Right hand thumb bar isnt used much outside of layer button
+*/
